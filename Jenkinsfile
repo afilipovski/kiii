@@ -7,5 +7,17 @@ pipeline {
       }
     }
 
+    stage('docker image build') {
+      steps {
+        echo 'test'
+      }
+    }
+
+    stage('docker image push') {
+      steps {
+        echo 'push'
+      }
+    }
+
   }
 }
